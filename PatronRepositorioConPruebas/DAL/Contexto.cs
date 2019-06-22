@@ -21,10 +21,10 @@ namespace PatronRepositorioConPruebas.DAL
        public DbSet<Personas> Personas { get; set; }
        public DbSet<Productos> Productos { get; set; }
        public DbSet<Proovedor> proovedors { get; set; }
-       public DbSet<TipoComprobante> tipoComprobantes { get; set; }
-       public DbSet<TipoPersona> tipoPersonas { get; set; }
-       public DbSet<UnidadMedida> unidadMedidas { get; set; }
-       public DbSet<UsuarioHasPermiso> usuarioHasPermisos { get; set; }
+       public DbSet<TipoComprobante> TipoComprobantes { get; set; }
+       public DbSet<TipoPersona> TipoPersonas { get; set; }
+       public DbSet<UnidadMedida> UnidadMedidas { get; set; }
+       public DbSet<UsuarioHasPermiso> UsuarioHasPermisos { get; set; }
        public DbSet<Usuarios> Usuarios { get; set; }
        public DbSet<Ventas> Ventas { get; set; }
         
