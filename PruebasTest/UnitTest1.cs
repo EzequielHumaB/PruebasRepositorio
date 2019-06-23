@@ -13,20 +13,23 @@ namespace PruebasTest
         {
             RepositorioBase<Cargos> repositorio;
             repositorio = new RepositorioBase<Cargos>();
-     
-           // Assert.IsTrue(repositorio.Guardar(new Cargos()));
-            Assert.IsTrue(repositorio.Guardar(new Cargos()));
-            //  Assert.IsTrue(repositorio.Modificar(new Personas())); 
+            Cargos cargos = new Cargos();
+            cargos.CargoId = 1;
+            cargos.Estado_EstadoId = 12;
+            cargos.NombreCargo = "Nombre";
+          
+            Assert.IsTrue(repositorio.Guardar(cargos));
+           
         }
 
-        public void textMethod1()
+        [TestMethod()]
+        public void Eliminar()
         {
-            RepositorioBase<Proovedor> repositorio;
-            repositorio = new RepositorioBase<Proovedor>();
-
-            Assert.IsTrue(repositorio.Modificar(new Proovedor()));
-        }
-
+            RepositorioBase<Cargos> repos = 
+                new RepositorioBase<Cargos>();
+           
+            Assert.IsTrue(repos.Eliminar(3));
+         }
        
     }
 }
